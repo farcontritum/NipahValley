@@ -50,6 +50,15 @@ button {
   width: 100%;
 }
 
+::-moz-selection { /* Code for Firefox */
+    color: #fff;
+    background: #47CF86;
+}
+
+::selection {
+    color: #fff;
+    background: #47CF86;
+}
 
 
 /* ==================== fonts ==================== */
@@ -101,7 +110,7 @@ button {
 
 /* ==================== header ==================== */
 .header-main {
-  background-image: url('../img/header.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/1.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -167,9 +176,9 @@ button {
   max-width: 100%;
 }
 
-.p-bg-1 {background-image: url(../img/packageone.jpg)}
-.p-bg-2 {background-image: url(../img/packagetwo.jpg)}
-.p-bg-3 {background-image: url(../img/packagethree.jpg)}
+.p-bg-1 {background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/4.jpeg)}
+.p-bg-2 {background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/5.jpeg)}
+.p-bg-3 {background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/3.jpeg)}
 
 .package-inner {
   padding: 150px 0 150px 0;
@@ -216,6 +225,15 @@ button {
   visibility: hidden;
   opacity: 0;
 }
+
+.package-desc-inner p {
+  font-size: 18px;
+}
+
+
+
+
+
 
 .video-inner {
   padding: 60px 0 60px 0;
@@ -389,7 +407,7 @@ footer#second-footer a p {
 
 .bg-right-contact{
   min-height: 500px;
-  background-image: url(../img/header.jpg);
+  background-image: url(../img/4.jpeg);
   background-position: center;
   background-size: 1000px 500px;
   background-repeat: no-repeat;
@@ -435,6 +453,7 @@ footer#second-footer a p {
   background-color: #0a1215;
   border-bottom: 2px solid #474d50;
   width: 100%;
+  resize: none;
 }
 
 .contact-button {
@@ -442,10 +461,33 @@ footer#second-footer a p {
   padding: 40px 0 30px 0;
 }
 
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #777;
+  font-family: 'Nunito-Regular';
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #777;
+  font-family: 'Nunito-Regular';
+  opacity: 1;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #777;
+  font-family: 'Nunito-Regular';
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #777;
+  font-family: 'Nunito-Regular';
+}
+
+#contact input, #contact textarea {
+  color: #fff;
+  font-family: 'Nunito-Regular';
+}
+
 /* -- pricelist -- */
 .carousel .background {
   background-position: center center;
-  background-size: 100% 100%;
+  background-size: 100%;
   background-repeat: no-repeat;
   min-height: 500px;
 }
@@ -457,15 +499,18 @@ footer#second-footer a p {
 }
 
 .carousel .background.a {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/package-1.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/3.jpeg");
+  height: 100%;
 }
 
 .carousel .background.b {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/package-2.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/4.jpeg");
+  height: 100%;
 }
 
 .carousel .background.c {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/service-3.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/6.jpeg");
+  height: 100%;
 }
 
 .carousel-fade .carousel-inner .item {
